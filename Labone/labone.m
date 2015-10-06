@@ -3,7 +3,6 @@
 % First we compare the shapes of different population distributions. Here 1000
 % samples were taken from uniform and gaussian distributions
 % and bucketed into a histogram. 
-
 distHist(1000, 'uniform');
 distHist(1000, 'gaussian');
 
@@ -27,8 +26,8 @@ clt(1000);
 
 % We can see this by re-evaluating the above loop for different sample 
 % sizes. Note for larger n it closer resembles a gaussian and gets narrower.
+clt(10);
 clt(100);
-clt(1000);
 clt(1000000);
 
 

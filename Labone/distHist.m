@@ -4,14 +4,9 @@ if strcmp(dist, 'gaussian')
     x = randn(n);
 elseif strcmp(dist,'uniform')
     x = rand(n,1);
-elseif strcmp(dist, 'exponential')
-    x = exprnd(1,n,1);
-else
-    error('Distribution not found');
+else error('Distribution not found');
 end
-
 [xx,nn] = hist(x);
 bar(xx);
-
 end
 
