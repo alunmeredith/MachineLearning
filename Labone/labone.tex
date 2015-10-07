@@ -2,6 +2,7 @@
 \usepackage[]{mcode}
 \usepackage{graphicx}
 \usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
 
 \begin{document}
 \section{Central Limit Theorem}
@@ -51,7 +52,7 @@ We can see the distribution approximates to a bell shaped curve for large values
 \section{}
 \subsection{Manipulating covariance}
 
-Multi-dimensional normally distributed datasets can be produced with desired shapes as long as the desired covariance matrix is known. To produce these distributions first factorise the desired covariance matrix to produce the matrix A such that $A'A = C$. Then compute the product of our two dimensional normal distribution X and A $Y = X*A$. This has been done for an example covariance matrix C = [2,1; 1,2] in figure 6 below. 
+Multi-dimensional normally distributed datasets can be produced with desired shapes as long as the desired covariance matrix $C$ is known. To produce these distributions first factorise $C$ such that $A'A = C$. Then transform our standard two dimensional normal distribution $Y = X*A$. This has been done for an example covariance matrix C = [2,1; 1,2] in figure 6 below. 
 
 \begin{figure}[!h]
   \centering
@@ -62,7 +63,7 @@ Multi-dimensional normally distributed datasets can be produced with desired sha
   \hfill
   \begin{minipage}[b]{0.3\textwidth}
      \includegraphics[width=\textwidth]{varianceProjection.png}
-     \caption{Doodle describing how dot product projects the variance}
+     \caption{Diagram describing how dot product projects the variance}
   \end{minipage}
   \begin{minipage}[b]{0.3\textwidth}
      \includegraphics[width=\textwidth]{variance.jpg}
@@ -73,12 +74,13 @@ Multi-dimensional normally distributed datasets can be produced with desired sha
 Using the cov() function in matlab yields a covariance of C verifying our goal of producing a desired covariance.
 
 \subsection{Dimensionality reduction}  
-In dimensionality reduction the desire is to simplify the features of a dataset while retaining as much information as possible. This is done by projecting the n dimensional data onto a lower dimension plane, for example a vector. In order to choose the vector to project onto, we want to minimise the information lost. Intuitively we can do this by trying to maximise the variance of our data along the vector (once projected each observation is described only by its position on the vector, so variance of this position is an analogue to data retention). Figure 7 shows the mechanism for this. $ X*u $
+In dimensionality reduction the desire is to simplify the features of a dataset while retaining as much information as possible. This is done by projecting the n dimensional data onto a lower dimension plane, in this case a vector. In order to choose the vector to project onto, we want to minimise the information lost. This can be done by maximising the variance of our data along the vector (once projected each observation is described only by its position on the vector, so variance of this position is an analogue to data retention). Figure 7 shows the mechanism for this. $ X*u $
 
-The vector $u = [sin(theta_); cos(theta)]$ for $\theta \in {0-2\pi}$ draws a circle from the origin. As the projection vector rotates in a circle we can see how well fitted the different lines are to our data. We can see from the plot that the projection which has maximum variance (closest to the natural projection of the data) is slightly below 50 degrees. By maximising the variance of the projection we can maximise the information retained from the dimensionality reduction process. 
+The vector $u = [sin(theta_), cos(theta)]$ for $\theta \in {0-2\pi}$ draws a circle around the origin. As the u vector rotates we can see how well fitted the different lines are to our data. Figure 8 plots this, we can see the projection which has maximum variance (closest to the natural projection of the data) is slightly below 50 degrees. 
 
-Using matlab's $eig()$ function we can extract the eigenvectors of the covariance matrix. The first eigenvector is equal to the principle component, the second is orthogonal to this. We can see that the eigenvectors of a covariance matrix describe this vector of maximum variance (priciple component). If the covariance matrix is symmetric this result can be generalised INSERT REFERENCE.
+Using matlab's $eig()$ function we can extract the eigenvectors of the covariance matrix. The first eigenvector is equal to the principle component, the second is orthogonal to this (highest variance orthogonal vector). \\ $^{[https://www.quora.com/What-is-an-eigenvector-of-a-covariance-matrix]}$
 
+\bibliographystyle{biblo.bib}
 
 \end{document}
 

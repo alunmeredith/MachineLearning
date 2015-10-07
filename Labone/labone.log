@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.26)  7 OCT 2015 00:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.26)  7 OCT 2015 06:16
 entering extended mode
 **labone.tex
 
@@ -210,77 +210,84 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count96
 Package caption Info: listings package is loaded.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count97
+)
 (C:\Users\Alun\Documents\Work\DataScience\Southampton\Machine_learning\MachineL
 earning\Labone\labone.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 7.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    ... okay on input line 7.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count97
+\scratchcounter=\count98
 \scratchdimen=\dimen116
 \scratchbox=\box28
-\nofMPsegments=\count98
-\nofMParguments=\count99
+\nofMPsegments=\count99
+\nofMParguments=\count100
 \everyMPshowfont=\toks16
-\MPscratchCnt=\count100
+\MPscratchCnt=\count101
 \MPscratchDim=\dimen117
-\MPnumerator=\count101
-\makeMPintoPDFobject=\count102
+\MPnumerator=\count102
+\makeMPintoPDFobject=\count103
 \everyMPtoPDFconversion=\toks17
 )
-\c@lstlisting=\count103
+\c@lstlisting=\count104
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  <uniform.jpg, id=1, 562.1pt x 421.575pt>
 File: uniform.jpg Graphic file (type jpg)
  <use uniform.jpg>
-Package pdftex.def Info: uniform.jpg used on input line 16.
+Package pdftex.def Info: uniform.jpg used on input line 17.
 (pdftex.def)             Requested size: 137.9979pt x 103.49583pt.
 
 <gaussian.jpg, id=2, 562.1pt x 421.575pt>
 File: gaussian.jpg Graphic file (type jpg)
  <use gaussian.jpg>
-Package pdftex.def Info: gaussian.jpg used on input line 21.
+Package pdftex.def Info: gaussian.jpg used on input line 22.
 (pdftex.def)             Requested size: 137.9979pt x 103.49583pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 28.
+(Font)              <7> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 28.
+(Font)              <5> on input line 29.
 
 <clt100.jpg, id=3, 562.1pt x 421.575pt>
 File: clt100.jpg Graphic file (type jpg)
  <use clt100.jpg>
-Package pdftex.def Info: clt100.jpg used on input line 35.
+Package pdftex.def Info: clt100.jpg used on input line 36.
 (pdftex.def)             Requested size: 110.40253pt x 82.80182pt.
 
 <clt1000.jpg, id=4, 562.1pt x 421.575pt>
 File: clt1000.jpg Graphic file (type jpg)
  <use clt1000.jpg>
-Package pdftex.def Info: clt1000.jpg used on input line 40.
+Package pdftex.def Info: clt1000.jpg used on input line 41.
 (pdftex.def)             Requested size: 110.40253pt x 82.80182pt.
 
 <clt100000.jpg, id=5, 562.1pt x 421.575pt>
 File: clt100000.jpg Graphic file (type jpg)
  <use clt100000.jpg>
-Package pdftex.def Info: clt100000.jpg used on input line 44.
+Package pdftex.def Info: clt100000.jpg used on input line 45.
 (pdftex.def)             Requested size: 110.40253pt x 82.80182pt.
  [1
 
@@ -295,36 +302,36 @@ ne_learning/MachineLearning/Labone/clt100000.jpg>]
 <twoDGaussian.jpg, id=18, 973.6375pt x 770.88pt>
 File: twoDGaussian.jpg Graphic file (type jpg)
  <use twoDGaussian.jpg>
-Package pdftex.def Info: twoDGaussian.jpg used on input line 59.
+Package pdftex.def Info: twoDGaussian.jpg used on input line 60.
 (pdftex.def)             Requested size: 103.50105pt x 81.93874pt.
 
 <varianceProjection.png, id=19, 595.47469pt x 398.99063pt>
 File: varianceProjection.png Graphic file (type png)
 
 <use varianceProjection.png>
-Package pdftex.def Info: varianceProjection.png used on input line 64.
+Package pdftex.def Info: varianceProjection.png used on input line 65.
 (pdftex.def)             Requested size: 103.50105pt x 69.34953pt.
  <variance.jpg, id=20, 973.6375pt x 770.88pt>
 File: variance.jpg Graphic file (type jpg)
 
 <use variance.jpg>
-Package pdftex.def Info: variance.jpg used on input line 68.
+Package pdftex.def Info: variance.jpg used on input line 69.
 (pdftex.def)             Requested size: 103.50105pt x 81.93874pt.
  [2 <C:/Users/Alun/Documents/Work/DataScience/Southampton/Machine_learning/Mach
 ineLearning/Labone/twoDGaussian.jpg> <C:/Users/Alun/Documents/Work/DataScience/
 Southampton/Machine_learning/MachineLearning/Labone/varianceProjection.png> <C:
 /Users/Alun/Documents/Work/DataScience/Southampton/Machine_learning/MachineLear
-ning/Labone/variance.jpg>] [3]
+ning/Labone/variance.jpg>]
 (C:\Users\Alun\Documents\Work\DataScience\Southampton\Machine_learning\MachineL
 earning\Labone\labone.aux) ) 
 Here is how much of TeX's memory you used:
- 4356 strings out of 493921
- 65276 string characters out of 3147285
- 126061 words of memory out of 3000000
- 7652 multiletter control sequences out of 15000+200000
+ 4689 strings out of 493921
+ 69220 string characters out of 3147285
+ 128518 words of memory out of 3000000
+ 7981 multiletter control sequences out of 15000+200000
  5457 words of font info for 20 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,8n,42p,617b,406s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,8n,42p,600b,406s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.p
@@ -335,9 +342,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX
 type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmsy7.pfb>
-Output written on labone.pdf (3 pages, 335435 bytes).
+Output written on labone.pdf (2 pages, 340089 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
