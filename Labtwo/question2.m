@@ -10,8 +10,8 @@ X1 = X1*A;
 X2 = X2*A;
 
 % shift means of distributions by m1/m2
-m1 = [0 4];
-m2 = [4 0];
+m1 = [0 2];
+m2 = [1.5 0];
 X1 = X1 + kron(ones(N,1), m1);
 X2 = X2 + kron(ones(N,1), m2);
 

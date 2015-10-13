@@ -20,9 +20,9 @@ w = randn(3,1);
 
 % Error correcting learning
 eta = 0.001;
-PercentageError = zeros(1,20);
-for k = 1:5000
-    for iter = 1:50
+
+for j = 1:20
+    for iter = 1:1000000
         j = ceil(rand*N/2); % random integer index of training set observation 
         if ( ytr(j)*Xtr(j,:)*w < 0 ) %if sign of prediction X*w !matches Y 
             w = w + eta*ytr(j)*Xtr(j,:)'; %shift weights by a fraction of our prediction in the direction of output.
@@ -32,9 +32,12 @@ for k = 1:5000
     % Performance on test data
     yhts = Xts*w;
     disp([yts yhts])
-    PercentageError(k) = 100*length(find(yts .* yhts <0))/length(yts); % percentage of wrongly identified data
-end
+    PercentageError = 100*length(find(yts .* yhts <0))/length(yts); % percentage of wrongly identified data
+
 
 x2 = (-w(3) + w(1)*5)/w(2);
+% when x2 = 10
 x1 = (-w(3)-10*w(2))/w(1);
+
+hold on
 plot([(-5) x1], [x2 10], 'g', 'LineWidth', 1);
