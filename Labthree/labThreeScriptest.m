@@ -1,5 +1,4 @@
 function [ bestAccFish, bestAccRand, bestAccMean, pCorrectNN, pCorrectEuclid, pCorrectMahal, pCorrectBayes, AUCfish, AUCrand, AUCmean, AUCbayes ] = labThreeScript( C1, C2, m1, m2, N )
-rocResolution = 50; %number of bins when sampling ROC
 
 % QUESTION 1 =============================================
 % Define two class pattern classification problem between 
@@ -64,7 +63,7 @@ plot(xx,yy, 'r', 'LineWidth', 2);
 
 % project data onto line: 
 % Linear projection = special case matrix transform Y = X*A, where A is a vector. (n-1 dimensional plane)
-p1 = X1 * wF;
+p1 = X1* wF;
 p2 = X2 * wF;
 
 % calculates range of projected data along the line. 
@@ -87,8 +86,11 @@ ylabel('Class 2', 'FontSize', 14)
 % Question 5 ===================================================
 
 % Calculate a range of thresholds
+[nn1, xx1] = hist(p1);
+[nn2, xx2] = hist(p2);
 thmin = min([xx1 xx2]);
 thmax = max( [xx1 xx2]);
+rocResolution = 50; %number of bins when sampling ROC
 thRange = linspace(thmin, thmax, rocResolution);
 
 %  Compute Reciever Operating Characteristic (ROC) curve for fisher
@@ -106,7 +108,7 @@ title('Receiver Operating Characteristic Curve', 'FontSize', 20);
 % Adds null hypothesis
 plot(0:100, 0:100, 'b-');
 % Plots fisher discriminant
-plot(ROCfish(:,1), ROCfish(:,2), 'r', 'LineWidth', 2);
+plot(ROCfish(:,1), ROCfish(:,2), 'b', 'LineWidth', 2);
 
 % QUESTION 6 ==================
 % Compute the area under the ROC curve
@@ -124,27 +126,19 @@ disp(['Fisher projection Best Accuracy: ' num2str(bestAccFish*100)]);
 % Plot Roc for random direction
 
 % Calcualte a linear equation through the origin with random gradient
-% generates an angle between 0 - pi radians (because +/-ve direction is
-% irrelevant) y = x tan(theta). Setting x to 1. 
-wR = [1; tan(rand(1)*pi)];
-% Plot random line projection
-figure(1);
+wR = [1; tan(rand(1)*(2*pi))];
+% Generate x and y coordinates for random gradient
 xx = -6:0.1:6;
-yy = xx * wR(2)/wR(1);
-plot(xx,yy, 'k', 'LineWidth', 2);
+yy = xx * wR(2);
 % Project data onto line
-p2 = X1 * wR;
-p1 = X2 * wR;
-
-thmin = min(p1);
-thmax = max(p2);
-thRange = linspace(thmin, thmax, rocResolution);
+p1 = X1*wR;
+p2 = X2*wR;
 
 % Generate ROC from random direction
 ROCrand = ROCcalc2(wR, p1, p2);
 % Add ROC to plot
 figure(3);
-plot(ROCrand(:,1), ROCrand(:,2), 'k', 'LineWidth', 2);
+plot(ROCrand(:,1), ROCrand(:,2), 'r', 'LineWidth', 2);
 % Calculate accuracy 
 bestAccRand = bestAccuracy(p1, p2, thRange);
 disp(['Random projection best Accuracy: ' num2str(bestAccRand*100)]);
@@ -285,7 +279,7 @@ for jThreshold = 1:rocResolution
 end
 
 figure(3);
-plot(fPos, tPos, 'b', 'LineWidth', 2);
+plot(fPos, tPos, 'k', 'LineWidth', 2);
 % AUC
 AUCbayes = trapz(fPos/100, tPos/100);
 % Highest Accuracy
