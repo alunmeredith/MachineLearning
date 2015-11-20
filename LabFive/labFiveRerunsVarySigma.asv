@@ -9,10 +9,9 @@
 % Set the number of repitions and how the code is split
 REPS = 10;
 TRAINFRAC = 0.8;
-CENTERS_VECTOR = 1:200;
+CENTERS_VECTOR = 50;
 CV_FOLDS = 0;
-SIGREPS = 10;
-
+SIG_VECTOR = (1:100)/10;
 load -ascii housing.data;
 load('redWine.mat');
 
@@ -24,6 +23,7 @@ ii = cvIndices(Y, round(TRAINFRAC/(1-TRAINFRAC)));
 
 Xtrain = Y(ii~=1, :);
 Ntrain = length(Xtrain);
+
 sig = zeros(SIGREPS,1);
 for i = 1:SIGREPS
     sig(i) = norm( Xtrain(ceil(rand*Ntrain),:) - Xtrain(ceil(rand*Ntrain),:) );

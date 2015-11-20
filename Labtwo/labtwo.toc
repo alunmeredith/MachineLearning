@@ -1,0 +1,3 @@
+\contentsline {section}{\numberline {1}Distance from a point to a line}{1}
+\contentsline {section}{\numberline {2}Bayes' Classifier}{1}
+\contentsline {section}{\numberline {3}Perceptron Algorithm}{1}

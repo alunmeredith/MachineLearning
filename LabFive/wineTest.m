@@ -11,6 +11,7 @@
 REPS = 20;
 TRAINFRAC = 0.8;
 CV_FOLDS = 5;
+SIGREPS = 10;
 
 load('redWine.mat'); %returns "redWine" matrix
 load -ascii housing.data; %returns "housing" matrix
@@ -19,7 +20,7 @@ load -ascii housing.data; %returns "housing" matrix
 [f, Y, N] = normalise(housing); %normalise the data
 Ntrain = TRAINFRAC*N;
 Ntest = (1-TRAINFRAC)*N;
-ii = cvIndices(Y, round(TRAINFRAC / (1-TRAINFRAC)));
+iiCV = cvIndices(Y, round(TRAINFRAC / (1-TRAINFRAC)));
 
 % Do linear regression on it
 ltest = zeros(REPS,1); % Initialise variables
@@ -29,7 +30,7 @@ for i = 1:REPS
 end
 
 
-Xtrain = Y((iiCV~=1)&(iiCV~=cvFolds + 2), :);
+Xtrain = Y((iiCV~=1)&(iiCV~=CV_FOLDS + 2), :);
 Ntrain = length(Xtrain);
 sig = zeros(SIGREPS,1);
 for i = 1:SIGREPS

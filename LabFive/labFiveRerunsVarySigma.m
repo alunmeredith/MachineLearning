@@ -9,10 +9,9 @@
 % Set the number of repitions and how the code is split
 REPS = 10;
 TRAINFRAC = 0.8;
-CENTERS_VECTOR = 1:200;
+CENTERS_VECTOR = 50;
 CV_FOLDS = 0;
-SIGREPS = 10;
-
+SIG_VECTOR = (10:100)/10;
 load -ascii housing.data;
 load('redWine.mat');
 
@@ -24,33 +23,32 @@ ii = cvIndices(Y, round(TRAINFRAC/(1-TRAINFRAC)));
 
 Xtrain = Y(ii~=1, :);
 Ntrain = length(Xtrain);
-sig = zeros(SIGREPS,1);
-for i = 1:SIGREPS
-    sig(i) = norm( Xtrain(ceil(rand*Ntrain),:) - Xtrain(ceil(rand*Ntrain),:) );
-end
-sigma = mean(sig);
 
-% Run RBF regression on the vector of number of centers
-[RMSEtrainKMean, RMSEtestKMean] = RBFvaryK(Y, f, iiCV, CENTERS_VECTOR, REPS, sigma);
+RMSEtest = zeros(length(SIG_VECTOR),1);
+RMSEtrain = zeros(length(SIG_VECTOR),1);
+for i = 1:length(SIG_VECTOR)
+    % Run RBF regression on the vector of number of centers
+    [ RMSEtest(i), RMSEtrain(i)] = labFiveScript( CENTERS_VECTOR, f, Y, ii, CV_FOLDS, SIG_VECTOR(i), 'train');
+end
 
 % Plot Results
 figure(2),
 subplot(3,1,1),
-plot(CENTERS_VECTOR, RMSEtrainKMean, 'r.', 'LineWidth', 1), grid on
+plot(SIG_VECTOR, RMSEtrain, 'r.', 'LineWidth', 1), grid on
 title('Training Set', 'FontSize', 16);
-xlabel('Number of Basis Functions', 'FontSize', 14);
+xlabel('Variance in Basis Function', 'FontSize', 14);
 ylabel('RMSE', 'FontSize', 14);
 
 subplot(3,1,2),
-plot(CENTERS_VECTOR, RMSEtestKMean,'b.', 'LineWidth', 1), grid on
+plot(SIG_VECTOR, RMSEtest,'b.', 'LineWidth', 1), grid on
 title('Testing Set', 'FontSize', 16);
-xlabel('Number of Basis Functions', 'FontSize', 14);
+xlabel('Variance in Basis Function', 'FontSize', 14);
 ylabel('RMSE', 'FontSize', 14);
 
 subplot(3,1,3),
-plot(CENTERS_VECTOR, RMSEtestKMean - RMSEtrainKMean, 'g.', 'LineWidth', 1), grid on
-title('Test - Training set RMSE', 'FontSize', 16);
-xlabel('Number of Basis Functions', 'FontSize', 14);
+plot(SIG_VECTOR, RMSEtest - RMSEtrain, 'g.', 'LineWidth', 1), grid on
+title('Difference', 'FontSize', 16);
+xlabel('Variance in Basis Function', 'FontSize', 14);
 ylabel('RMSE', 'FontSize', 14);
 
 
