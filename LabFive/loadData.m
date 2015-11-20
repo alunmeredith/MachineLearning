@@ -5,7 +5,8 @@ load -ascii housing.data;
 %
 [N, p1] = size(housing); 
 p = p1-1; % 1 - number of variables
-Y = [housing(:,1:p) ones(N,1)]; % Y: housing with final variable all ones
+Y = [housing(:,1:p)]; % Y: housing with final variable all ones
+% ones(N,1)]; Removed the bias unit because not doing linear reg
 for j=1:p  % normalised each value of y 
 Y(:,j)=Y(:,j)-mean(Y(:,j));
 Y(:,j)=Y(:,j)/std(Y(:,j));
