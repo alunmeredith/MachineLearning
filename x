@@ -1,0 +1,1064 @@
+[1mdiff --cc LabFive/LabFiveReport.aux[m
+[1mindex 8580480,531b105..0000000[m
+[1m--- a/LabFive/LabFiveReport.aux[m
+[1m+++ b/LabFive/LabFiveReport.aux[m
+[36m@@@ -3,18 -3,8 +3,26 @@@[m
+  \newlabel{eq:model}{{1}{1}}[m
+  \newlabel{eq:pdf}{{2}{1}}[m
+  \newlabel{eq:weights}{{3}{1}}[m
+[32m++<<<<<<< HEAD[m
+[32m +\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Variation in testing and training RMSE error with number of RBF clusters K\relax }}{1}}[m
+[32m +\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}[m
+[32m +\newlabel{fig:VaryingK}{{1}{1}}[m
+[32m +\@writefile{toc}{\contentsline {section}{\numberline {2}Parameters}{1}}[m
+[32m +\citation{wineQuality}[m
+[32m +\bibcite{wineQuality}{1}[m
+[32m +\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Variation in testing and training RMSE error with variance of Basis Functions $\sigma $\relax }}{2}}[m
+[32m +\newlabel{fig:varyingSigma}{{2}{2}}[m
+[32m +\@writefile{toc}{\contentsline {section}{\numberline {3}Contrast with Linear Model}{2}}[m
+[32m +\@writefile{toc}{\contentsline {section}{\numberline {4}Wine Dataset\cite  {wineQuality}}{2}}[m
+[32m +\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Comparison between linear and RBF models on house prices for RMSE from 10 fold cross-validation\relax }}{2}}[m
+[32m +\newlabel{fig:linearComparison}{{3}{2}}[m
+[32m +\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Prediction accuracy of RBF on one of the validation folds for Wine Quality data\relax }}{2}}[m
+[32m +\newlabel{fig:WineResults}{{4}{2}}[m
+[32m +\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces RMSE errors for both Boston Housing Data and Wine Quality data using linear and RBF models with 50 centres and 20 fold cross-validation\relax }}{2}}[m
+[32m++=======[m
+[32m+ \@writefile{toc}{\contentsline {section}{\numberline {2}Parameters}{2}}[m
+[32m+ \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Variation in testing and training RMSE error with number of RBF clusters K}}{2}}[m
+[32m+ \newlabel{fig:VaryingK}{{1}{2}}[m
+[32m+ \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Variation in testing and training RMSE error with variance of Basis Functions $\sigma $}}{2}}[m
+[32m+ \newlabel{fig:VaryingK}{{2}{2}}[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+[1mdiff --cc LabFive/LabFiveReport.log[m
+[1mindex 3bfebc1,ab92f59..0000000[m
+[1m--- a/LabFive/LabFiveReport.log[m
+[1m+++ b/LabFive/LabFiveReport.log[m
+[36m@@@ -1,13 -1,24 +1,37 @@@[m
+[32m++<<<<<<< HEAD[m
+[32m +This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.21)  22 NOV 2015 15:39[m
+[32m +entering extended mode[m
+[32m +**LabFiveReport.tex[m
+[32m +(LabFiveReport.tex[m
+[32m +LaTeX2e <2015/01/01> patch level 2[m
+[32m +Babel <3.9m> and hyphenation patterns for 69 languages loaded.[m
+[32m +("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"[m
+[32m +Document Class: article 2014/09/29 v1.4h Standard LaTeX document class[m
+[32m +("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"[m
+[32m +File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)[m
+[32m++=======[m
+[32m+ This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.26)  20 NOV 2015 23:37[m
+[32m+ entering extended mode[m
+[32m+ **LabFiveReport.tex[m
+[32m+ [m
+[32m+ (C:\Users\Alun\Documents\Work\DataScience\Southampton\Machine_learning\MachineL[m
+[32m+ earning\LabFive\LabFiveReport.tex[m
+[32m+ LaTeX2e <2011/06/27>[m
+[32m+ Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar[m
+[32m+ abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, [m
+[32m+ croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga[m
+[32m+ lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland[m
+[32m+ ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,[m
+[32m+  lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n[m
+[32m+ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman[m
+[32m+ ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm[m
+[32m+ an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl[m
+[32m+ ishmax, welsh, loaded.[m
+[32m+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"[m
+[32m+ Document Class: article 2007/10/19 v1.4h Standard LaTeX document class[m
+[32m+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"[m
+[32m+ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  )[m
+  \c@part=\count79[m
+  \c@section=\count80[m
+[36m@@@ -80,14 -91,14 +104,25 @@@[m [mLaTeX Info: Redefining \[ on input lin[m
+  LaTeX Info: Redefining \] on input line 2666.[m
+  )[m
+  ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"[m
+[32m++<<<<<<< HEAD[m
+[32m +Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)[m
+[32m +[m
+[32m +("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"[m
+[32m +Package: keyval 2014/10/28 v1.15 key=value parser (DPC)[m
+[32m +\KV@toks@=\toks19[m
+[32m +)[m
+[32m +("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"[m
+[32m +Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)[m
+[32m++=======[m
+[32m+ Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)[m
+[32m+ [m
+[32m+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"[m
+[32m+ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)[m
+[32m+ \KV@toks@=\toks19[m
+[32m+ )[m
+[32m+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"[m
+[32m+ Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  [m
+  ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"[m
+  Package: trig 1999/03/16 v1.09 sin cos tan (DPC)[m
+[36m@@@ -95,7 -106,7 +130,11 @@@[m
+  ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"[m
+  File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive[m
+  )[m
+[32m++<<<<<<< HEAD[m
+[32m +Package graphics Info: Driver file: pdftex.def on input line 94.[m
+[32m++=======[m
+[32m+ Package graphics Info: Driver file: pdftex.def on input line 91.[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  [m
+  ("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"[m
+  File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX[m
+[36m@@@ -111,107 -122,89 +150,195 @@@[m [mPackage: ltxcmds 2011/11/09 v1.22 LaTe[m
+  \Gin@req@height=\dimen112[m
+  \Gin@req@width=\dimen113[m
+  )[m
+[32m++<<<<<<< HEAD[m
+[32m +("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"[m
+[32m +Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)[m
+[32m +[m
+[32m +("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"[m
+[32m +Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)[m
+[32m +Package caption3 Info: TeX engine: e-TeX on input line 57.[m
+[32m +\captionmargin=\dimen114[m
+[32m +\captionmargin@=\dimen115[m
+[32m +\captionwidth=\dimen116[m
+[32m +\caption@tempdima=\dimen117[m
+[32m +\caption@indent=\dimen118[m
+[32m +\caption@parindent=\dimen119[m
+[32m +\caption@hangindent=\dimen120[m
+[32m +)[m
+[32m +\c@ContinuedFloat=\count100[m
+[32m +)[m
+[32m +(LabFiveReport.aux)[m
+[32m +LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.[m
+[32m +LaTeX Font Info:    ... okay on input line 8.[m
+[32m +LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.[m
+[32m +LaTeX Font Info:    ... okay on input line 8.[m
+[32m +LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.[m
+[32m +LaTeX Font Info:    ... okay on input line 8.[m
+[32m +LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.[m
+[32m +LaTeX Font Info:    ... okay on input line 8.[m
+[32m +LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.[m
+[32m +LaTeX Font Info:    ... okay on input line 8.[m
+[32m +LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.[m
+[32m +LaTeX Font Info:    ... okay on input line 8.[m
+[32m + ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"[m
+[32m +[Loading MPS to PDF converter (version 2006.09.02).][m
+[32m +\scratchcounter=\count101[m
+[32m +\scratchdimen=\dimen121[m
+[32m +\scratchbox=\box28[m
+[32m +\nofMPsegments=\count102[m
+[32m +\nofMParguments=\count103[m
+[32m +\everyMPshowfont=\toks20[m
+[32m +\MPscratchCnt=\count104[m
+[32m +\MPscratchDim=\dimen122[m
+[32m +\MPnumerator=\count105[m
+[32m +\makeMPintoPDFobject=\count106[m
+[32m +\everyMPtoPDFconversion=\toks21[m
+[32m +)[m
+[32m +Package caption Info: Begin \AtBeginDocument code.[m
+[32m +Package caption Info: End \AtBeginDocument code.[m
+[32m + <VaryingK.jpg, id=1, 583.17876pt x 672.5125pt>[m
+[32m +File: VaryingK.jpg Graphic file (type jpg)[m
+[32m + <use VaryingK.jpg>[m
+[32m +Package pdftex.def Info: VaryingK.jpg used on input line 38.[m
+[32m +(pdftex.def)             Requested size: 154.69933pt x 178.3894pt.[m
+[32m +[m
+[32m +<VaryingSigma.jpg, id=2, 567.11874pt x 662.475pt>[m
+[32m +File: VaryingSigma.jpg Graphic file (type jpg)[m
+[32m + <use VaryingSigma.jpg>[m
+[32m +Package pdftex.def Info: VaryingSigma.jpg used on input line 47.[m
+[32m +(pdftex.def)             Requested size: 154.69933pt x 180.71039pt.[m
+[32m +[m
+[32m +[1{C:/Users/inbre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}[m
+[32m +[m
+[32m +[m
+[32m + <./VaryingK.jpg>] <linearComparison.jpg, id=23, 1405.25pt x 1053.9375pt>[m
+[32m +File: linearComparison.jpg Graphic file (type jpg)[m
+[32m +[m
+[32m +<use linearComparison.jpg>[m
+[32m +Package pdftex.def Info: linearComparison.jpg used on input line 60.[m
+[32m +(pdftex.def)             Requested size: 154.69933pt x 116.01389pt.[m
+[32m + <wineResults.jpg, id=24, 1405.25pt x 1053.9375pt>[m
+[32m +File: wineResults.jpg Graphic file (type jpg)[m
+[32m +[m
+[32m +<use wineResults.jpg>[m
+[32m +Package pdftex.def Info: wineResults.jpg used on input line 71.[m
+[32m +(pdftex.def)             Requested size: 154.69933pt x 116.01389pt.[m
+[32m + [2 <./VaryingSigma.jpg> <./linearComparison.jpg> <./wineResults.jpg>] (LabFive[m
+[32m +Report.aux) ) [m
+[32m +Here is how much of TeX's memory you used:[m
+[32m + 2831 strings out of 493673[m
+[32m + 41168 string characters out of 3143959[m
+[32m + 111632 words of memory out of 3000000[m
+[32m + 6184 multiletter control sequences out of 15000+200000[m
+[32m + 11437 words of font info for 41 fonts, out of 3000000 for 9000[m
+[32m + 1025 hyphenation exceptions out of 8191[m
+[32m + 36i,10n,38p,604b,340s stack positions out of 5000i,500n,10000p,200000b,50000s[m
+[32m +<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10[m
+[32m +.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:[m
+[32m +/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program [m
+[32m +Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/Mi[m
+[32m +KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9[m
+[32m +/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty[m
+[32m +pe1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi[m
+[32m +c/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont[m
+[32m +s/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1[m
+[32m +2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:[m
+[32m +/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program F[m
+[32m +iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTe[m
+[32m +X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fo[m
+[32m +nts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1[m
+[32m +/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a[m
+[32m +msfonts/cm/cmti9.pfb>[m
+[32m +Output written on LabFiveReport.pdf (2 pages, 424971 bytes).[m
+[32m +PDF statistics:[m
+[32m + 81 PDF objects out of 1000 (max. 8388607)[m
+[32m + 0 named destinations out of 1000 (max. 500000)[m
+[32m + 21 words of extra memory for PDF output out of 10000 (max. 10000000)[m
+[32m++=======[m
+[32m+ (C:\Users\Alun\Documents\Work\DataScience\Southampton\Machine_learning\MachineL[m
+[32m+ earning\LabFive\LabFiveReport.aux[m
+[32m+ [m
+[32m+ LaTeX Warning: Label `fig:VaryingK' multiply defined.[m
+[32m+ [m
+[32m+ )[m
+[32m+ LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.[m
+[32m+ LaTeX Font Info:    ... okay on input line 6.[m
+[32m+ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.[m
+[32m+ LaTeX Font Info:    ... okay on input line 6.[m
+[32m+ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.[m
+[32m+ LaTeX Font Info:    ... okay on input line 6.[m
+[32m+ LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.[m
+[32m+ LaTeX Font Info:    ... okay on input line 6.[m
+[32m+ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.[m
+[32m+ LaTeX Font Info:    ... okay on input line 6.[m
+[32m+ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.[m
+[32m+ LaTeX Font Info:    ... okay on input line 6.[m
+[32m+  ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"[m
+[32m+ [Loading MPS to PDF converter (version 2006.09.02).][m
+[32m+ \scratchcounter=\count100[m
+[32m+ \scratchdimen=\dimen114[m
+[32m+ \scratchbox=\box28[m
+[32m+ \nofMPsegments=\count101[m
+[32m+ \nofMParguments=\count102[m
+[32m+ \everyMPshowfont=\toks20[m
+[32m+ \MPscratchCnt=\count103[m
+[32m+ \MPscratchDim=\dimen115[m
+[32m+ \MPnumerator=\count104[m
+[32m+ \makeMPintoPDFobject=\count105[m
+[32m+ \everyMPtoPDFconversion=\toks21[m
+[32m+ ) [1{C:/Users/Alun/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}[m
+[32m+ [m
+[32m+ [m
+[32m+ ][m
+[32m+ <VaryingK.jpg, id=20, 583.17876pt x 672.5125pt>[m
+[32m+ File: VaryingK.jpg Graphic file (type jpg)[m
+[32m+  <use VaryingK.jpg>[m
+[32m+ Package pdftex.def Info: VaryingK.jpg used on input line 41.[m
+[32m+ (pdftex.def)             Requested size: 221.0pt x 254.84933pt.[m
+[32m+ [m
+[32m+ <VaryingSigma.jpg, id=21, 567.11874pt x 662.475pt>[m
+[32m+ File: VaryingSigma.jpg Graphic file (type jpg)[m
+[32m+  <use VaryingSigma.jpg>[m
+[32m+ Package pdftex.def Info: VaryingSigma.jpg used on input line 50.[m
+[32m+ (pdftex.def)             Requested size: 176.80067pt x 206.5276pt.[m
+[32m+ [m
+[32m+ [2 <C:/Users/Alun/Documents/Work/DataScience/Southampton/Machine_learning/Machi[m
+[32m+ neLearning/LabFive/VaryingK.jpg> <C:/Users/Alun/Documents/Work/DataScience/Sout[m
+[32m+ hampton/Machine_learning/MachineLearning/LabFive/VaryingSigma.jpg>] [3[m
+[32m+ [m
+[32m+ ][m
+[32m+ (C:\Users\Alun\Documents\Work\DataScience\Southampton\Machine_learning\MachineL[m
+[32m+ earning\LabFive\LabFiveReport.aux)[m
+[32m+ [m
+[32m+ LaTeX Warning: There were multiply-defined labels.[m
+[32m+ [m
+[32m+  ) [m
+[32m+ Here is how much of TeX's memory you used:[m
+[32m+  1752 strings out of 493921[m
+[32m+  22309 string characters out of 3147285[m
+[32m+  79481 words of memory out of 3000000[m
+[32m+  5065 multiletter control sequences out of 15000+200000[m
+[32m+  10023 words of font info for 36 fonts, out of 3000000 for 9000[m
+[32m+  841 hyphenation exceptions out of 8191[m
+[32m+  27i,10n,20p,797b,213s stack positions out of 5000i,500n,10000p,200000b,50000s[m
+[32m+ <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr[m
+[32m+ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi[m
+[32m+ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe[m
+[32m+ X 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fo[m
+[32m+ nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type[m
+[32m+ 1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/[m
+[32m+ amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/[m
+[32m+ cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.[m
+[32m+ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P[m
+[32m+ rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fil[m
+[32m+ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX [m
+[32m+ 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/font[m
+[32m+ s/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p[m
+[32m+ ublic/amsfonts/cm/cmsy8.pfb>[m
+[32m+ Output written on LabFiveReport.pdf (3 pages, 247453 bytes).[m
+[32m+ PDF statistics:[m
+[32m+  74 PDF objects out of 1000 (max. 8388607)[m
+[32m+  0 named destinations out of 1000 (max. 500000)[m
+[32m+  11 words of extra memory for PDF output out of 10000 (max. 10000000)[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  [m
+[1mdiff --cc LabFive/LabFiveReport.pdf[m
+[1mindex 18e4239,5b23ae6..0000000[m
+[1m--- a/LabFive/LabFiveReport.pdf[m
+[1m+++ b/LabFive/LabFiveReport.pdf[m
+[1mdiff --cc LabFive/LabFiveReport.synctex.gz[m
+[1mindex c510de5,82da7ae..0000000[m
+Binary files differ
+[1mdiff --cc LabFive/LabFiveReport.tex[m
+[1mindex 062f8e0,7055f71..0000000[m
+[1m--- a/LabFive/LabFiveReport.tex[m
+[1m+++ b/LabFive/LabFiveReport.tex[m
+[36m@@@ -1,8 -1,6 +1,14 @@@[m
+[32m++<<<<<<< HEAD[m
+[32m +\documentclass[a4paper,10pt, twocolumn]{article}[m
+[32m +\usepackage{amsmath}[m
+[32m +\usepackage{graphicx}[m
+[32m +\usepackage[font={small,it}]{caption}[m
+[32m +[m
+[32m++=======[m
+[32m+ \documentclass[a4paper,11pt, twocolumn]{article}[m
+[32m+ \usepackage{amsmath}[m
+[32m+ \usepackage{graphicx}[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  [m
+  [m
+  \begin{document}[m
+[36m@@@ -11,8 -9,12 +17,17 @@@[m
+  \author{Alun Meredith}[m
+  \maketitle[m
+  [m
+[32m++<<<<<<< HEAD[m
+[32m +\section{Method}[m
+[32m +In both linear regression and Radial Basis Functions (RBF) we construct a model of the data and train that model to best represent the data; minimising an error function representing the distance between the observations the model. Linear regression models distributions around a straight line model whereas LBF models distributions ($\phi$)  around a collection of points (eq.\ref{eq:model}).[m
+[32m++=======[m
+[32m+ \begin{abstract}[m
+[32m+ In this lab we explore radial basis functions as a method for non-linear regression analysis and compare its performance to linear regression methods from lab four for two different datasets.[m
+[32m+ \end{abstract}[m
+[32m+ [m
+[32m+ \section{Method}[m
+[32m+ In both linear regression and Radial Basis Functions (RBF) we construct a model of the data and train that model to best represent the data by minimising some error function representing the distance between the observations of a training set and the model. The distinction between the two methods is that linear regression has a model of an m dimensional straight line whereas LBF has a collection of points (centres) as its model and therefore the cost function is a measure of the weighted distance between those centres and the observations (eq.\ref{eq:model}).[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  [m
+  \begin{align}[m
+  	\label{eq:model}	[m
+[36m@@@ -23,78 -25,35 +38,110 @@@[m
+  	\lambda &= D / y[m
+  \end{align} [m
+  [m
+[32m++<<<<<<< HEAD[m
+[32m +To construct a regression using RBF we first normalise the data. The purpose of normalising the data is the make sure that variables with large values don't dominate variables with small values. [m
+[32m +[m
+[32m +Evaluating the position of the centres a K-means clustering algorithm was used. This algorithm doesn't always converge to a global optimum. As such it can be worth repeating reinitialising the algorithm to find better solutions.[m
+[32m +[m
+[32m +The distribution away from the model must be chosen. These distributions are the 'Radial Basis Functions'; different functions can be chosen to model the data in different ways. In this case we chose a Gaussian model (eq.\ref{eq:pdf}) which confers a sense of locality. We estimate $\sigma$ as the average of a sample of 10 distances between random observations.[m
+[32m +[m
+[32m +Using these RBFs compute the probability density of each of the K centres on each of the n observations (eq.\ref{eq:pdf}) to construct a design matrix $D$. Train the weights ($\lambda$) of each Radial basis function as the effect its PDF has on the target value $y$ (eq.\ref{eq:weights}).[m
+[32m +\section{Parameters}[m
+[32m +[m
+[32m +This model has two parameters, the number of clusters $K$ and the variance of the Gaussian RBF $\sigma$. To evaluate these values in hierarchical clustering a dendrogram can be used and low dimensional data can be visually inspected. Here however we cannot use those techniques so we vary the values of both of these parameters and choose the value with greatest performance on the test set.[m
+[32m +[m
+[32m +\begin{figure}[t][m
+[32m +	\includegraphics[width=0.7\linewidth]{VaryingK.jpg}[m
+[32m++=======[m
+[32m+ To construct a regression using RBF we first normalise the data, subtracting the mean and dividing by the standard deviation for each variable. The purpose of normalising the data is the make sure that variables with large values don't dominate variables with small values. This is weighted against the idea that some variables with small values are more likely to have genuinely small effects however the model can often between these so it is valuable to normalise the data. [m
+[32m+ [m
+[32m+ To construct the position of the centres a K-means clustering algorithm was used. We initialise K cluster centres randomly and assign each observation to its nearest cluster before recomputing the position of the clusters as the mean position of the points associated with that cluster. This is repeated until the clusters no longer move. [m
+[32m+ [m
+[32m+ Just like in linear regression a method for evaluating the cost must be chosen. These methods are the Radial Basis Functions and many different functions can be chosen here to model the data in different ways. In this case we chose a Gaussian model as it enabled us to use the K-means clustering to compute the centres and confers a sense of locality. In this case we must choose the value for $\sigma$ to parametrise these functions. We will consider a simple approximation of the variance in the data by taking a sample of 10 pairs of observations and computing the average euclidean distance between the two. [m
+[32m+ [m
+[32m+ Using these RBFs we can compute the probability density of each of the K centres on each of the n observations (eq.\ref{eq:pdf}). This is our measure of distance from the model and gives us a Design Matrix. [m
+[32m+ [m
+[32m+ Finally we train the weights ($\lambda$) of each Radial basis function as the effect its PDF has on the target value $y$ (eq.\ref{eq:weights}).[m
+[32m+ \section{Parameters}[m
+[32m+ When we build a Gaussian RBF there are two parameters to consider, the number of clusters (K) and the width of the Gaussian $\sigma$. It is not immediately obvious what values of these parameters we should choose to produce a model which best represents the data, so we vary these parameters and see how they effect the error. [m
+[32m+ [m
+[32m+ \begin{figure}[ht][m
+[32m+ 	\includegraphics[width=\linewidth]{VaryingK.jpg}[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  	\centering[m
+  	\caption{Variation in testing and training RMSE error with number of RBF clusters K}[m
+  		\label{fig:VaryingK}[m
+  \end{figure}[m
+  [m
+[32m++<<<<<<< HEAD[m
+[32m +By varying the number of clusters figure (\ref{fig:VaryingK}) shows that the training set continuously improves accuracy as the model becomes more complex but this no longer has an effect on unseen data. This indicates high variance, with high bias present when the model is too simple and performs poorly on both set. We choose the smallest number of centres which where the testing set RMSE no longer improves substantially in this case around 50. [m
+[32m +[m
+[32m +\begin{figure}[ht][m
+[32m +	\includegraphics[width=0.7\linewidth]{VaryingSigma.jpg}[m
+[32m +	\centering[m
+[32m +	\caption{Variation in testing and training RMSE error with variance of Basis Functions $\sigma$}[m
+[32m +		\label{fig:varyingSigma}[m
+[32m +\end{figure}[m
+[32m +[m
+[32m +Varying the value of sigma (fig. \ref{fig:varyingSigma}) similarly shows poor performance at low values however at high values neither set sees any noticeable change after a value in the range of 3-5. Considering the average value approximated earlier fell in this range (4.70) we will continue to use it.[m
+[32m +[m
+[32m +\section{Contrast with Linear Model}[m
+[32m +[m
+[32m +When comparing our RBF to the linear model Figure \ref{fig:linearComparison} shows the linear regression outperforming the non-linear RBF regression on the training set but significantly under-performing on the validation set. This demonstrates that linear regression is much more susceptible to variance than the RBF however if you average the validation set models for linear regression you get a RMSE on a test set of 0.14, outperforming the radial basis function. We cannot use a similar method for the RBF because the K-means algorithm isn't deterministic. [m
+[32m +[m
+[32m +\begin{figure}[ht][m
+[32m +	\includegraphics[width=0.7\linewidth]{linearComparison.jpg}[m
+[32m +	\centering[m
+[32m +	\caption{Comparison between linear and RBF models on house prices for RMSE from 10 fold cross-validation}[m
+[32m +		\label{fig:linearComparison}[m
+[32m +\end{figure}[m
+[32m +[m
+[32m +\section{Wine Dataset\cite{wineQuality}}[m
+[32m +[m
+[32m +Finally we have repeated these steps to produce models of the quality of red wine. Repeating the methods used for the Boston housing data we get similar results (not shown for space reasons). [m
+[32m +[m
+[32m +\begin{figure}[ht][m
+[32m +	\includegraphics[width=0.7\linewidth]{wineResults.jpg}[m
+[32m +	\centering[m
+[32m +	\caption{Prediction accuracy of RBF on one of the validation folds for Wine Quality data}[m
+[32m +		\label{fig:WineResults}[m
+[32m +\end{figure}[m
+[32m +[m
+[32m +It can be seen from figure \ref{fig:WineResults} above that the wine dataset is much less accurate using RBF than previously, at least some of this can be attributed to the categorical nature of the results. It would make more sense to round our predictions to the nearest category for example or change the RBF to reflect the distribution of the data. [m
+[32m +[m
+[32m +\begin{table}[b][m
+[32m +\begin{tabular}{l c|c|c|c}[m
+[32m +	[m
+[32m +	&  & Test & validation & train \\[m
+[32m +Housing	& Linear & 1.14 & 1.07 & 0.27 \\[m
+[32m +	& RBF & 0.38 & & 0.35 \\[m
+[32m +Wine& Linear & 0.42 & 0.90 & 0.73 \\[m
+[32m +	& RBF & 0.79 & & 0.77 \\[m
+[32m +\end{tabular}[m
+[32m +\caption{RMSE errors for both Boston Housing Data and Wine Quality data using linear and RBF models with 50 centres and 20 fold cross-validation}[m
+[32m +\end{table}[m
+[32m + [m
+[32m +\begin{thebibliography}{9}[m
+[32m +\bibitem{wineQuality}[m
+[32m +  Leslie Lamport et al.,[m
+[32m +  Modeling wine preferences by data mining, %from physicochemical properties, [m
+[32m +  %In Decision Support Systems, [m
+[32m +  %Elsevier, [m
+[32m +  %47(4):547-553, [m
+[32m +  2009.[m
+[32m +\end{thebibliography}[m
+[32m++=======[m
+[32m+ As the figure (\ref{fig:VaryingK}) shows increasing the number of centres continuously improves the accuracy on the training set but after a point has no more effect on the accuracy on the testing set. Large difference between training and testing set like this is indicative of high variance (overfitting) occurring in our model. This makes logical sense as when the centres per observation approaches 1 you will have a centre under each observation. Equally when there are few numbers of centres we have high bias in that our model is overly restricted and cannot perform well on either dataset. To balance these two effects we will choose the smallest number of centres which where the testing set RMSE no longer improves substantially in this case around 50. [m
+[32m+ [m
+[32m+ \begin{figure}[ht][m
+[32m+ 	\includegraphics[width=0.8\linewidth]{VaryingSigma.jpg}[m
+[32m+ 	\centering[m
+[32m+ 	\caption{Variation in testing and training RMSE error with variance of Basis Functions $\sigma$}[m
+[32m+ 		\label{fig:VaryingK}[m
+[32m+ \end{figure}[m
+[32m+ [m
+[32m+ For varying the value of sigma we see that similarly having low values performs poorly on both the training set and testing set, however neither the training set or test set seem to have visible improvements after the range of about 4. Considering the average value of Sigma approximated through the euclidean distance between two points method was 4.70 (average of 1000 samples) it seems appropriate to continue using this method as long as we are taking an average of a small sample to mitigate some of the random effects. [m
+[32m+ [m
+[32m+ [m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  \end{document}[m
+[1mdiff --cc LabFive/RBFvaryK.m[m
+[1mindex 4ced3dc,7fb513f..0000000[m
+[1m--- a/LabFive/RBFvaryK.m[m
+[1m+++ b/LabFive/RBFvaryK.m[m
+[36m@@@ -1,15 -1,16 +1,30 @@@[m
+[32m++<<<<<<< HEAD[m
+[32m +function [ RMSEtrainKMean, RMSEtestKMean ] = RBFvaryK( Y, f, ii, cvFolds, CentersVector, sigma)[m
+[32m++=======[m
+[32m+ function [ RMSEtrainKMean, RMSEtestKMean ] = RBFvaryK( Y, f, ii, CentersVector, REPS, sigma)[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  %RBFvaryK runs RBF regression (labFiveSCript) for a variety of Ks. [m
+  %   Detailed explanation goes here[m
+  [m
+  % Collecting average of training and test errors for different values of K.[m
+[32m++<<<<<<< HEAD[m
+[32m +RMSEtestK = zeros(cvFolds,length(CentersVector));[m
+[32m +RMSEtrainK = zeros(cvFolds,length(CentersVector));[m
+[32m +for k = 1:length(CentersVector)[m
+[32m +    [RMSEtestK(:,k), RMSEtrainK(:,k)] = crossvalRBF( CentersVector(k), f, Y, ii, cvFolds, sigma, 'train');[m
+[32m +end[m
+[32m +[m
+[32m +[m
+[32m++=======[m
+[32m+ RMSEtestK = zeros(REPS,length(CentersVector));[m
+[32m+ RMSEtrainK = zeros(REPS,length(CentersVector));[m
+[32m+ for i = 1:REPS[m
+[32m+     for k = 1:length(CentersVector)[m
+[32m+         [RMSEtestK(i,k), RMSEtrainK(i,k)] = labFiveScript(CentersVector(k), f, Y,ii, 0, sigma, 'train');[m
+[32m+     end[m
+[32m+ end[m
+[32m+ [m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  RMSEtrainKMean = mean(RMSEtrainK,1);[m
+  RMSEtrainKVar = var(RMSEtrainK,1);[m
+  RMSEtestKMean = mean(RMSEtestK,1);[m
+[1mdiff --cc LabFive/WineResults.jpg[m
+[1mindex aca2129,38cc4ad..0000000[m
+Binary files differ
+[1mdiff --cc LabFive/labFiveReruns.m[m
+[1mindex 26bdf4e,b3beebf..0000000[m
+[1m--- a/LabFive/labFiveReruns.m[m
+[1m+++ b/LabFive/labFiveReruns.m[m
+[36m@@@ -7,22 -7,23 +7,41 @@@[m
+  % Initialising data here so number of basis functions can be set as a[m
+  % parameter of the length of the data.[m
+  % Set the number of repitions and how the code is split[m
+[32m++<<<<<<< HEAD[m
+[32m +CENTERS_VECTOR = 1:150;[m
+[32m +CV_FOLDS = 10;[m
+[32m +SIGREPS = 1000;[m
+[32m++=======[m
+[32m+ REPS = 10;[m
+[32m+ TRAINFRAC = 0.8;[m
+[32m+ CENTERS_VECTOR = 1:200;[m
+[32m+ CV_FOLDS = 0;[m
+[32m+ SIGREPS = 10;[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  [m
+  load -ascii housing.data;[m
+  load('redWine.mat');[m
+  [m
+[32m++<<<<<<< HEAD[m
+[32m +%[f, Y, N] = normalise(housing);[m
+[32m +[f, Y, N] = normalise(redWine);[m
+[32m +[m
+[32m +% Seperate into training set and testing set[m
+[32m +ii = cvIndices(Y, CV_FOLDS);[m
+[32m +[m
+[32m +Xtrain = Y(ii~=1, :);[m
+[32m +Ntrain = length(Xtrain);[m
+[32m +[m
+[32m++=======[m
+[32m+ [f, Y, N] = normalise(housing);[m
+[32m+ %[f, Y, N] = normalise(redWine);[m
+[32m+ [m
+[32m+ % Seperate into training set and testing set[m
+[32m+ ii = cvIndices(Y, round(TRAINFRAC/(1-TRAINFRAC)));[m
+[32m+ [m
+[32m+ Xtrain = Y(ii~=1, :);[m
+[32m+ Ntrain = length(Xtrain);[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  sig = zeros(SIGREPS,1);[m
+  for i = 1:SIGREPS[m
+      sig(i) = norm( Xtrain(ceil(rand*Ntrain),:) - Xtrain(ceil(rand*Ntrain),:) );[m
+[36m@@@ -30,7 -31,7 +49,11 @@@[m [men[m
+  sigma = mean(sig);[m
+  [m
+  % Run RBF regression on the vector of number of centers[m
+[32m++<<<<<<< HEAD[m
+[32m +[RMSEtrainKMean, RMSEtestKMean] = RBFvaryK(Y, f, iiCV, CV_FOLDS, CENTERS_VECTOR, sigma);[m
+[32m++=======[m
+[32m+ [RMSEtrainKMean, RMSEtestKMean] = RBFvaryK(Y, f, iiCV, CENTERS_VECTOR, REPS, sigma);[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  [m
+  % Plot Results[m
+  figure(2),[m
+[1mdiff --cc LabFive/wineTest.m[m
+[1mindex b38ba02,296febd..0000000[m
+[1m--- a/LabFive/wineTest.m[m
+[1m+++ b/LabFive/wineTest.m[m
+[36m@@@ -8,28 -8,30 +8,54 @@@[m
+  % use of a non-linear model improve predictions?[m
+  [m
+  % Set the number of repitions and how the code is split[m
+[32m++<<<<<<< HEAD[m
+[32m +CV_FOLDS = 20;[m
+[32m +CENTRES = 50;[m
+[32m +SIGREPS = 100;[m
+[32m +[m
+[32m +% load('news.mat'); %returns "news" matrix[m
+[32m +load('redWine.mat');[m
+[32m +%load -ascii housing.data; %returns "housing" matrix[m
+[32m +[m
+[32m +[f, Y, N] = normalise(redWine); %normalise the data[m
+[32m +%[f, Y, N] = normalise(news); %normalise the data[m
+[32m +%[f, Y, N] = normalise(housing); %normalise the data[m
+[32m +iiCV = cvIndices(Y, CV_FOLDS);[m
+[32m +Ntrain = length(iiCV ~= CV_FOLDS);[m
+[32m +Ntest = length(iiCV == CV_FOLDS);[m
+[32m +[m
+[32m +% Do linear regression on it[m
+[32m +[ltest, ltrain, lval] = linearRegTest(Y,f,N,CV_FOLDS);[m
+[32m++=======[m
+[32m+ REPS = 20;[m
+[32m+ TRAINFRAC = 0.8;[m
+[32m+ CV_FOLDS = 5;[m
+[32m+ SIGREPS = 10;[m
+[32m+ [m
+[32m+ load('redWine.mat'); %returns "redWine" matrix[m
+[32m+ load -ascii housing.data; %returns "housing" matrix[m
+[32m+ [m
+[32m+ %[f, Y, N] = normalise(redWine); %normalise the data[m
+[32m+ [f, Y, N] = normalise(housing); %normalise the data[m
+[32m+ Ntrain = TRAINFRAC*N;[m
+[32m+ Ntest = (1-TRAINFRAC)*N;[m
+[32m+ iiCV = cvIndices(Y, round(TRAINFRAC / (1-TRAINFRAC)));[m
+[32m+ [m
+[32m+ % Do linear regression on it[m
+[32m+ ltest = zeros(REPS,1); % Initialise variables[m
+[32m+ ltrain = zeros(REPS,1);[m
+[32m+ for i = 1:REPS[m
+[32m+     [ltest(i), ltrain(i)] = linearRegTest(Y,f,N);[m
+[32m+ end[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  [m
+  [m
+  Xtrain = Y((iiCV~=1)&(iiCV~=CV_FOLDS + 2), :);[m
+  Ntrain = length(Xtrain);[m
+[32m++<<<<<<< HEAD[m
+[32m +% Choose appropriate value for sigma[m
+[32m++=======[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  sig = zeros(SIGREPS,1);[m
+  for i = 1:SIGREPS[m
+      sig(i) = norm( Xtrain(ceil(rand*Ntrain),:) - Xtrain(ceil(rand*Ntrain),:) );[m
+[36m@@@ -38,19 -40,31 +64,50 @@@[m [msigma = mean(sig)[m
+  [m
+  % Do radial basis function on it [m
+  % Choose pointsPerCenter = 1.5 because yielded best error [m
+[32m++<<<<<<< HEAD[m
+[32m +[rtest, rtrain] = crossvalRBF(CENTRES, f, Y, iiCV, CV_FOLDS, sigma, 'train');[m
+[32m +[m
+[32m +%Construct boxplots[m
+[32m +index1 = [ones(CV_FOLDS,1); 2*ones(CV_FOLDS,1)]; % [m
+[32m +testBoxplots = [lval;rtest]; [m
+[32m +trainBoxplots = [ltrain;rtrain];[m
+[32m +index2 =  [3*ones(CV_FOLDS,1); 4*ones(CV_FOLDS,1)];[m
+[32m +[m
+[32m +figure(1),[m
+[32m +subplot(1,2,1),[m
+[32m +boxplot(testBoxplots,index1,'labels', {'Linear', 'Radial'});[m
+[32m +title('Validation set', 'FontSize', 16);[m
+[32m +ylabel('RMSE', 'FontSize', 14);[m
+[32m +subplot(1,2,2),[m
+[32m +boxplot(trainBoxplots,index2, 'labels', {'Linear', 'Radial'});[m
+[32m +title('Training set', 'FontSize', 16);[m
+[32m++=======[m
+[32m+ rtest=zeros(REPS,1);[m
+[32m+ rtrain=zeros(REPS,1);[m
+[32m+ for i = 1:REPS[m
+[32m+     [rtest(i), rtrain(i)] = labFiveScript(round(Ntrain/1.5), f, Y, ii, 0, sigma, 'train');[m
+[32m+ end[m
+[32m+ [m
+[32m+ %Results[m
+[32m+ linTestError = mean(mean(ltest));[m
+[32m+ linTestVar = mean(var(ltest));[m
+[32m+ linTrainError = mean(mean(ltrain));[m
+[32m+ linTrainVar = mean(var(ltrain));[m
+[32m+ [m
+[32m+ radTestError = mean(mean(rtest));[m
+[32m+ radTestVar = mean(var(rtest));[m
+[32m+ radTrainError = mean(mean(rtrain));[m
+[32m+ radTrainVar = mean(var(rtrain));[m
+[32m+ [m
+[32m+ %Construct boxplots[m
+[32m+ [m
+[32m+ index1 = [ones(REPS,1); 2*ones(REPS,1)]; % [m
+[32m+ linBoxplots = [ltest;rtest]; [m
+[32m+ RDFboxplots = [ltrain;rtrain];[m
+[32m+ index2 =  [3*ones(REPS,1); 4*ones(REPS,1)];[m
+[32m+ figure(1),[m
+[32m+ subplot(1,2,1),[m
+[32m+ boxplot(linBoxplots,index1,'labels', {'Linear-Test', 'Radial-Test'});[m
+[32m+ subplot(1,2,2),[m
+[32m+ boxplot(RDFboxplots,index2, 'labels', {'Linear-Train', 'Radial-Train'});[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+[1mdiff --cc Labfour/cvIndices.m[m
+[1mindex aceb235,b218b9a..0000000[m
+[1m--- a/Labfour/cvIndices.m[m
+[1m+++ b/Labfour/cvIndices.m[m
+[36m@@@ -1,13 -1,13 warning: LF will be replaced by CRLF in Labfour/cvIndices.m.
+The file will have its original line endings in your working directory.
++1,29 @@@[m
+[31m -function [ fold ] = cvIndices( Y, k )[m
+[31m -% Takes data / number of folds and computes random indices for each[m
+[31m -% observations which can be subset later[m
+[31m -[m
+[31m -n = length(Y);[m
+[31m -w = floor(n/k);[m
+[31m -fold = repmat(1:k,[w 1]);[m
+[31m -fold = fold(:)';[m
+[31m -ind = randperm(length(fold));[m
+[31m -fold = fold(ind);[m
+[31m -[m
+[31m -end[m
+[31m -[m
+[32m++<<<<<<< HEAD[m
+[32m +function [ fold ] = cvIndices( Y, k )[m
+[32m +% Takes data / number of folds and computes random indices for each[m
+[32m +% observations which can be subset later[m
+[32m +[m
+[32m +n = length(Y);[m
+[32m +w = floor(n/k);[m
+[32m +fold = repmat(1:k,[w 1]);[m
+[32m +fold = fold(:)';[m
+[32m +ind = randperm(length(fold));[m
+[32m +fold = fold(ind);[m
+[32m +[m
+[32m +end[m
+[32m +[m
+[32m++=======[m
+[32m++function [ fold ] = cvIndices( Y, k )[m
+[32m++% Takes data / number of folds and computes random indices for each[m
+[32m++% observations which can be subset later[m
+[32m++[m
+[32m++n = length(Y);[m
+[32m++w = floor(n/k);[m
+[32m++fold = repmat(1:k,[w 1]);[m
+[32m++fold = fold(:)';[m
+[32m++ind = randperm(length(fold));[m
+[32m++fold = fold(ind);[m
+[32m++[m
+[32m++end[m
+[32m++[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+[1mdiff --cc Labfour/linearReg.m[m
+[1mindex a9f5af8,4f4aad5..0000000[m
+[1m--- a/Labfour/linearReg.m[m
+[1m+++ b/Labfour/linearReg.m[m
+[36m@@@ -1,27 -1,27 +1,57 @@@[m
+[31m -function [ w, fh ] = linearReg( Y, f, w )[m
+[31m -% This function gives predictions / model from training data[m
+[31m -% If w = 'train' it trains the model, otherwise it uses the model provided[m
+[31m -% to predict test data. [m
+[31m -[m
+[31m -% returns model and predictions[m
+[31m -if strcmp(w, 'train')[m
+[31m -    w = inv(Y'*Y)*Y'*f; %maths from lecture![m
+[31m -end[m
+[31m -fh = Y*w;[m
+[31m -figure(1), clf,[m
+[31m -plot(f, fh, 'r.', 'LineWidth', 2),[m
+[31m -grid on[m
+[31m -s=getenv('USERNAME');[m
+[31m -xlabel('True House Price', 'FontSize', 14)[m
+[31m -ylabel('Prediction', 'FontSize', 14)[m
+[31m -title(['Linear Regression: ' s], 'FontSize', 14)[m
+[31m -[m
+[31m -[m
+[31m -%figure(1), clf,[m
+[31m -%hist(f - fh, 20)[m
+[31m -%grid on[m
+[31m -%s=getenv('USERNAME');[m
+[31m -%xlabel('Residual size', 'FontSize', 14)[m
+[31m -%ylabel('Frequency', 'FontSize', 14)[m
+[31m -%title(['Residual distribution: ' s], 'FontSize', 14)[m
+[31m -end[m
+[32m++<<<<<<< HEAD[m
+[32m +function [ w, fh ] = linearReg( Y, f, w )[m
+[32m +% This function gives predictions / model from training data[m
+[32m +% If w = 'train' it trains the model, otherwise it uses the model provided[m
+[32m +% to predict test data. [m
+[32m +[m
+[32m +% returns model and predictions[m
+[32m +if strcmp(w, 'train')[m
+[32m +    w = inv(Y'*Y)*Y'*f; %maths from lecture![m
+[32m +end[m
+[32m +fh = Y*w;[m
+[32m +figure(1), clf,[m
+[32m +plot(f, fh, 'r.', 'LineWidth', 2),[m
+[32m +grid on[m
+[32m +s=getenv('USERNAME');[m
+[32m +xlabel('True House Price', 'FontSize', 14)[m
+[32m +ylabel('Prediction', 'FontSize', 14)[m
+[32m +title(['Linear Regression: ' s], 'FontSize', 14)[m
+[32m +[m
+[32m +[m
+[32m +%figure(1), clf,[m
+[32m +%hist(f - fh, 20)[m
+[32m +%grid on[m
+[32m +%s=getenv('USERNAME');[m
+[32m +%xlabel('Residual size', 'FontSize', 14)[m
+[32m +%ylabel('Frequency', 'FontSize', 14)[m
+[32m +%title(['Residual distribution: ' s], 'FontSize', 14)[m
+[32m +end[m
+[32m++=======[m
+[32m++function [ w, fh ] = linearReg( Y, f, w )[m
+[32m++% This function gives predictions / model from training data[m
+[32m++% If w = 'train' it trains the model, otherwise it uses the model provided[m
+[32m++% to predict test data. [m
+[32m++[m
+[32m++% returns model and predictions[m
+[32m++if strcmp(w, 'train')[m
+[32m++    w = inv(Y'*Y)*Y'*f; %maths from lecture![m
+[32m++end[m
+[32m++fh = Y*w;[m
+[32m++figure(1), clf,[m
+[32m++plot(f, fh, 'r.', 'LineWidth', 2),[m
+[32m++grid on[mwarning: LF will be replaced by CRLF in Labfour/linearReg.m.
+The file will have its original line endings in your working directory.
+
+[32m++s=getenv('USERNAME');[m
+[32m++xlabel('True House Price', 'FontSize', 14)[m
+[32m++ylabel('Prediction', 'FontSize', 14)[m
+[32m++title(['Linear Regression: ' s], 'FontSize', 14)[m
+[32m++[m
+[32m++[m
+[32m++%figure(1), clf,[m
+[32m++%hist(f - fh, 20)[m
+[32m++%grid on[m
+[32m++%s=getenv('USERNAME');[m
+[32m++%xlabel('Residual size', 'FontSize', 14)[m
+[32m++%ylabel('Frequency', 'FontSize', 14)[m
+[32m++%title(['Residual distribution: ' s], 'FontSize', 14)[m
+[32m++end[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+[1mdiff --cc Labfour/linearRegTest.m[m
+[1mindex cbecad8,bcdc14a..0000000[m
+[1m--- a/Labfour/linearRegTest.m[m
+[1m+++ b/Labfour/linearRegTest.m[m
+[36m@@@ -1,49 -1,52 +1,103 @@@[m
+[31m -function [ RMSEtest, RMSEtrain, RMSEval, wMean ] = linearRegTest(Y,f,N)[m
+[31m -% Performs linear regression on the UCI data, if k is set to a value other[m
+[31m -    % than one also performs cross validation[m
+[31m -[m
+[31m -    % % load the data and normalise its mean/variance[m
+[31m -    % load('redWine.mat');[m
+[31m -    % [f, Y, N] = normalise(redWine);[m
+[31m -    % [m
+[31m -    % % split into training / testing sets[m
+[31m -    % % set aside 20% for testing set later[m
+[31m -     ii = cvIndices(Y,5);[m
+[31m -     Ytest = Y(ii == 1, :);[m
+[31m -     ftest = f(ii == 1, :);[m
+[31m -     Ytrain = Y(ii ~= 1, :);[m
+[31m -     ftrain = f(ii ~= 1, :);[m
+[31m -[m
+[31m -    % basic linear Regression[m
+[31m -    % linearReg(Y,f,'train');[m
+[31m -[m
+[31m -    % consider cross val ind function[m
+[31m -    k = 5;[m
+[31m -    fold = cvIndices(Ytrain, k);[m
+[31m -    for i = 1:k[m
+[31m -        Ytr = Y(fold == i, :);[m
+[31m -        ftr = f(fold == i, :);[m
+[31m -        Yts = Y(fold ~= i, :);[m
+[31m -        fts = f(fold ~= i, :);[m
+[31m -[m
+[31m -        % Estimate regression model (w) on the training set[m
+[31m -        [w, fhtr] = linearReg(Ytr, ftr, 'train');[m
+[31m -[m
+[31m -        % Errors on training set[m
+[31m -        RMSEtrain = zeros(k,1);[m
+[31m -        RMSEtrain(i) = sqrt( sum((fhtr - ftr).^2) / (N * 0.8 * 0.9) );[m
+[31m -[m
+[31m -        % Errors on validation set set[m
+[31m -        [wtsm, fhts] = linearReg(Yts, fts, w);[m
+[31m -        RMSEval = zeros(k,1);[m
+[31m -        RMSEval(i) = sqrt( sum((fhts - fts).^2) / (N * 0.8 * 0.1) );[m
+[31m -        wCV(:,i) = wtsm;[m
+[31m -    end[m
+[31m -[m
+[31m -    % Errors on test set[m
+[31m -    wMean = mean(wCV, 2);[m
+[31m -    [wMean, fhtest] = linearReg(Ytest, ftest, wMean);[m
+[31m -    RMSEtest = sqrt( sum((fhtest - ftest).^2) / (N * 0.2) );[m
+[31m -    RMSEtrain = mean(RMSEtrain);[m
+[31m -    RMSEval = mean(RMSEval);[m
+[31m -end[m
+[31m -% SSEts is the error on the training data for each fold. If we assume it is[m
+[31m -% normally distributed via the central limit theorem we can calculate a[m
+[32m++<<<<<<< HEAD[m
+[32m +function [ RMSEtest, RMSEtrain, RMSEval, wMean ] = linearRegTest(Y,f,N,CV_FOLDS)[m
+[32m +% Performs linear regression on the UCI data, if k is set to a value other[m
+[32m +    % than one also performs cross validation[m
+[32m +[m
+[32m +    % % load the data and normalise its mean/variance[m
+[32m +    % load('redWine.mat');[m
+[32m +    % [f, Y, N] = normalise(redWine);[m
+[32m +    % [m
+[32m +    % % split into training / testing sets[m
+[32m +    % % set aside 20% for testing set later[m
+[32m +     ii = cvIndices(Y,CV_FOLDS);[m
+[32m +     Ytest = Y(ii == 1, :);[m
+[32m +     ftest = f(ii == 1, :);[m
+[32m +     Ytrain = Y(ii ~= 1, :);[m
+[32m +     ftrain = f(ii ~= 1, :);[m
+[32m +[m
+[32m +    % basic linear Regression[m
+[32m +    % linearReg(Y,f,'train');[m
+[32m +[m
+[32m +    % consider cross val ind function[m
+[32m +    iiCV = cvIndices(Ytrain, CV_FOLDS);[m
+[32m +    RMSEtrain = zeros(CV_FOLDS,1);[m
+[32m +    RMSEval = zeros(CV_FOLDS,1);[m
+[32m +    for fold = 1:CV_FOLDS[m
+[32m +        Ytr = Y(iiCV==fold, :);[m
+[32m +   warning: LF will be replaced by CRLF in Labfour/linearRegTest.m.
+The file will have its original line endings in your working directory.
+     ftr = f(iiCV==fold, :);[m
+[32m +        Yval = Y(iiCV~=fold, :);[m
+[32m +        fval = f(iiCV~=fold, :);[m
+[32m +[m
+[32m +        % Estimate regression model (w) on the training set[m
+[32m +        [w, fhtr] = linearReg(Ytr, ftr, 'train');[m
+[32m +[m
+[32m +        % Errors on training set[m
+[32m +        RMSEtrain(fold) = sqrt( sum((fhtr - ftr).^2) / length(ftr) );[m
+[32m +[m
+[32m +        % Errors on validation set set[m
+[32m +        [wtsm, fhts] = linearReg(Yval, fval, w);[m
+[32m +        RMSEval(fold) = sqrt( sum((fhts - fval).^2) / length(fval) );[m
+[32m +        wCV(:,fold) = wtsm;[m
+[32m +    end[m
+[32m +[m
+[32m +    % Errors on test set[m
+[32m +    wMean = mean(wCV, 2);[m
+[32m +    [wMean, fhtest] = linearReg(Ytest, ftest, wMean);[m
+[32m +    RMSEtest = sqrt( sum((fhtest - ftest).^2) / (N * 0.2) );[m
+[32m +end[m
+[32m +% SSEts is the error on the training data for each fold. If we assume it is[m
+[32m +% normally distributed via the central limit theorem we can calculate a[m
+[32m++=======[m
+[32m++function [ RMSEtest, RMSEtrain, RMSEval, wMean ] = linearRegTest(Y,f,N)[m
+[32m++% Performs linear regression on the UCI data, if k is set to a value other[m
+[32m++    % than one also performs cross validation[m
+[32m++[m
+[32m++    % % load the data and normalise its mean/variance[m
+[32m++    % load('redWine.mat');[m
+[32m++    % [f, Y, N] = normalise(redWine);[m
+[32m++    % [m
+[32m++    % % split into training / testing sets[m
+[32m++    % % set aside 20% for testing set later[m
+[32m++     ii = cvIndices(Y,5);[m
+[32m++     Ytest = Y(ii == 1, :);[m
+[32m++     ftest = f(ii == 1, :);[m
+[32m++     Ytrain = Y(ii ~= 1, :);[m
+[32m++     ftrain = f(ii ~= 1, :);[m
+[32m++[m
+[32m++    % basic linear Regression[m
+[32m++    % linearReg(Y,f,'train');[m
+[32m++[m
+[32m++    % consider cross val ind function[m
+[32m++    k = 5;[m
+[32m++    fold = cvIndices(Ytrain, k);[m
+[32m++    for i = 1:k[m
+[32m++        Ytr = Y(fold == i, :);[m
+[32m++        ftr = f(fold == i, :);[m
+[32m++        Yts = Y(fold ~= i, :);[m
+[32m++        fts = f(fold ~= i, :);[m
+[32m++[m
+[32m++        % Estimate regression model (w) on the training set[m
+[32m++        [w, fhtr] = linearReg(Ytr, ftr, 'train');[m
+[32m++[m
+[32m++        % Errors on training set[m
+[32m++        RMSEtrain = zeros(k,1);[m
+[32m++        RMSEtrain(i) = sqrt( sum((fhtr - ftr).^2) / (N * 0.8 * 0.9) );[m
+[32m++[m
+[32m++        % Errors on validation set set[m
+[32m++        [wtsm, fhts] = linearReg(Yts, fts, w);[m
+[32m++        RMSEval = zeros(k,1);[m
+[32m++        RMSEval(i) = sqrt( sum((fhts - fts).^2) / (N * 0.8 * 0.1) );[m
+[32m++        wCV(:,i) = wtsm;[m
+[32m++    end[m
+[32m++[m
+[32m++    % Errors on test set[m
+[32m++    wMean = mean(wCV, 2);[m
+[32m++    [wMean, fhtest] = linearReg(Ytest, ftest, wMean);[m
+[32m++    RMSEtest = sqrt( sum((fhtest - ftest).^2) / (N * 0.2) );[m
+[32m++    RMSEtrain = mean(RMSEtrain);[m
+[32m++    RMSEval = mean(RMSEval);[m
+[32m++end[m
+[32m++% SSEts is the error on the training data for each fold. If we assume it is[m
+[32m++% normally distributed via the central limit theorem we can calculate a[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  % confidence interval for it.[m
+[1mdiff --cc Labfour/loadData.m[m
+[1mindex 2fdbef7,a75fcc7..0000000[m
+[1m--- a/Labfour/loadData.m[m
+[1m+++ b/Labfour/loadData.m[m
+[36m@@@ -1,15 -1,15 +1,33 @@@[m
+[31m -% Load Boston Housing Data from UCI ML Repository[m
+[31m -%[m
+[31m -load -ascii housing.data;[m
+[31m -% Normalize the data, zero mean, unit standard deviation[m
+[31m -%[m
+[31m -[N, p1] = size(housing); [m
+[31m -p = p1-1; % 1 - number of variables[m
+[31m -Y = [housing(:,1:p) ones(N,1)]; % Y: housing with final variable all ones[m
+[31m -for j=1:p  % normalised each value of y [m
+[31m -Y(:,j)=Y(:,j)-mean(Y(:,j));[m
+[31m -Y(:,j)=Y(:,j)/std(Y(:,j));[m
+[31m -end[m
+[31m -f = housing(:,p1); % f is final variabe of housing[m
+[31m -f = f - mean(f); % normalise f.[m
+[31m -f = f/std(f);[m
+[32m++<<<<<<< HEAD[m
+[32m +% Load Boston Housing Data from UCI ML Repository[m
+[32m +%[m
+[32m +load -ascii housing.data;[m
+[32m +% Normalize the data, zero mean, unit standard deviation[m
+[32m +%[m
+[32m +[N, p1] = size(housing); [m
+[32m +p = p1-1; % 1 - number of variables[m
+[32m +Y = [housing(:,1:p) ones(N,1)]; % Y: housing with final variable all ones[m
+[32m +for j=1:p  % normalised each value of y [m
+[32m +Y(:,j)=Y(:,j)-mean(Y(:,j));[m
+[32m +Y(:,j)=Y(:,j)/std(Y(:,j));[m
+[32m +end[m
+[32m +f = housing(:,p1); % f is final variabe of housing[m
+[32m +f = f - mean(f); % normalise f.[m
+[32m +f = f/std(f);[m
+[32m++=======[m
+[32m++% Load Boston Housing Data from UCI ML Repository[m
+[32m++%[m
+[32m++load -ascii housing.data;[m
+[32m++% Normalize the data, zero mean, unit standard deviation[m
+[32m++%[m
+[32m++[N, p1] = size(housing); [m
+[32m++p = p1-1; % 1 - number of variables[m
+[32m++Y = [housing(:,1:p) ones(N,1)]; % Y: housing with final variable all ones[m
+[32m++for j=1:p  % normalised each value of y [m
+[32m++Y(:,j)=Y(:,j)-mean(Y(:,j));[m
+[32m++Y(:,j)=Y(:,j)/std(Y(:,j));[m
+[32m++end[m
+[32m++f = housing(:,p1); % f is final variabe of housing[m
+[32m++f = f - mean(f); % normalise f.[m
+[32m++f = f/std(f);[m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+[1mdiff --cc Labthree/labThreeScript.m[m
+[1mindex 1e0fefc,6f04c60..0000000[m
+[1m--- a/Labthree/labThreeScript.m[m
+[1m+++ b/Labthree/labThreeScript.m[m
+[36m@@@ -243,7 -243,7 +243,11 @@@[m [mnCorrect = 0[m
+       end[m
+   end[m
+  pCorrectEuclid = nCorrect*100/(N1+N2);[m
+[32m++<<<<<<< HEAD[m
+[32m +  [m
+[32m++=======[m
+[32m+ [m
+[32m++>>>>>>> ba3add8147de0f04dbc2bab201cc0314ca2ae952[m
+  %Mahalanobis Distance[m
+  nCorrect = 0;[m
+   for i = 1:(N1+N2)[m
+[1mdiff --git a/LabFive/normalise.m b/LabFive/normalise.m[m
+[1mdeleted file mode 100644[m
+[1mindex 33c4742..0000000[m
+[1m--- a/LabFive/normalise.m[m
+[1m+++ /dev/null[m
+[36m@@ -1,17 +0,0 @@[m
+[31m-function [ f, Y, N ] = normalise( Data )[m
+[31m-% Seperates the variables (S) from the target (y) and normalises them[m
+[31m-[m
+[31m-[N, p1] = size(Data); [m
+[31m-p = p1-1; % 1 - number of variables[m
+[31m-Y = [Data(:,1:p)]; % Y: housing without bias layer[m
+[31m-% ones(N,1)]; Removed the bias unit because not doing linear reg[m
+[31m-for j=1:p  % normalised each value of y [m
+[31m-Y(:,j)=Y(:,j)-mean(Y(:,j));[m
+[31m-Y(:,j)=Y(:,j)/std(Y(:,j));[m
+[31m-end[m
+[31m-f = Data(:,p1); % f is final variabe of housing[m
+[31m-f = f - mean(f); % normalise f.[m
+[31m-f = f/std(f);[m
+[31m-[m
+[31m-[m
+[31m-end[m
+\ No newline at end of file[m
+warning: LF will be replaced by CRLF in Labfour/loadData.m.
+The file will have its original line endings in your working directory.
